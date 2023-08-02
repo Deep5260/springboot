@@ -88,7 +88,7 @@ public class ProductController {
      * @param id
      * @return
      */
-    @DeleteMapping("/{id}")
+//    @DeleteMapping("/{id}")
     public String delete(@PathVariable Integer id) {
         productService.deleteProduct(id);
         return "redirect:/products";

@@ -11,9 +11,9 @@ import java.math.BigDecimal;
  * Product entity.
  */
 @Entity
-@Getter
-@Setter
-@NoArgsConstructor
+//@Getter
+//@Setter
+//@NoArgsConstructor
 public class Product {
 
     @Id
@@ -26,6 +26,9 @@ public class Product {
     private String productId;
     private String name;
     private BigDecimal price;
-    }
 
+    public Integer getId() {
+        return id;
+    }
 }
+
